@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-image: linear-gradient(rgba(12, 104, 223, 0.897), rgba(44, 44, 226, 0.822));
+    text-align: center;
+    font-size: 2.8em;
+    padding: 7px;
+}
+
+nav p:hover {
+    cursor: default;
+}
+
+#ola {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 10px;
+}
+
+#ola h1 {
+    font-size: 2.2em;
+}
+
+#ola p {
+    margin-top: 10px;
+}
+
+#ola a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#ola a:hover {
+    color: rgb(5, 212, 5);
+    transition: 0.4s;
+}
+
+#escolha {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#escolha h2 {
+    font-size: 2em;
+}
+
+#escolha p {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+#text_oqe {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.area {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 1.5s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 1px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+
+
+.accordion {
+    background-color: rgb(15, 108, 230);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 55%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+    text-align: center;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgba(33, 124, 209, 0.651);
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    width: 52%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+
+  .padding {
+    padding-top: 100px;
+  }
+
+
+  .img_acc {
+      background-color: rgb(46, 42, 42);
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 20px;
+  }
+
+  .img_acc img {
+      margin: 0;
+  }
+
+  #obs {
+      font-size: 0.7em;
+      color: rgb(117, 113, 113);
+  }

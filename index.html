@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/7f5cd7914c.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Stored Procedure</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="area"><i class="fas fa-database"></i>   Stored Procedure</div>
+            </nav>
+        </header>
+        <main>
+            <section id="ola">
+                <p><i class="fas fa-angle-right"></i> Nós fizemos esse site na intenção de compartilhar conhecimento sobre <strong>Stored Procedure.</strong>
+                <br>
+                Vamos abordar sobre o que é o stored procedure, para que serve e como usar.
+                <br>
+                </p>
+                
+            </section>
+
+            <section id="escolha">
+
+                    <button class="accordion">1 - O que é Stored Procedure?</button>
+                    <div class="panel">
+
+                        <p><i class="fas fa-angle-double-right"></i>  Stored Procedure em português procedimento armazenado é um código SQL preparado para que o código possa ser reutilizado repetidamente.
+                            Portanto, se você tiver uma consulta SQL que você escreve repetidamente, salve-a como um procedimento armazenado e chame-a para executá-la.
+                            Você também pode passar parâmetros para um procedimento armazenado, para que o procedimento armazenado possa agir com base nos valores dos parâmetros que são passados.</p>
+                      </div>
+
+                      <br>
+                    <br>
+                    <br>
+                    
+                  <button class="accordion">2 - Para que serve o Stored Procedure?</button>
+                <div class="panel">
+                    <p><strong><i class="fas fa-angle-double-right"></i>  A Stored Procedure serve quando:</strong> <br>
+                        <i class="fas fa-caret-right"></i>  Temos várias aplicações escritas em diferentes linguagens, ou rodam em plataformas diferentes, porém executam a mesma função. <br>
+                        <i class="fas fa-caret-right"></i>  Queremos diminuir o tamanho do código ao encurtar partes que se repetem.
+                        Dentro de uma Stored Procedure, você pode escrever comandos DML (Linguagem de manipulação de dados = Insert, Delete, Update, Merge) , DDL (Linguagem de definição de dados– Create, Drop, Alter) e DQL (Linguagem de consulta de dados = Select).
+                        O SQL Server armazena em cache os planos de execução das consultas e, normalmente, os reutiliza em execuções subsequentes da procedure para economizar tempo, CPU e recursos de memória associados à otimização das consultas.</p>
+
+                        <div class="img_acc">
+                            <img src="img/praqserve.png" height="350px">
+                        </div>
+
+                  </div>
+<br>
+<br>
+<br>
+                  <button class="accordion">3 - Como usar o Stored Procedure?</button>
+                <div class="panel">
+                    <p><i class="fas fa-angle-double-right"></i>  As Stored Procedures são criadas de formas simples e incrivelmente lógicas em relação a repetição de trechos complexos de código.</p>
+                    <div class="img_acc">
+                        <img src="img/oooss.PNG" height="120px">
+                    </div>
+                    <p><i class="fas fa-angle-double-right"></i>  As Stored Procedures fornecem muitos benefícios em comparação à implementação da lógica de negócios no aplicativo. Eles encapsulam a lógica para permitir a reutilização e ocultam a complexidade. É muito mais fácil aplicar alterações a um procedimento armazenado com um comando como ALTER PROCEDURE simples em comparação à implementação de alterações no aplicativo.
+                    </p>
+                    <div class="img_acc">
+                        <img src="img/alter2.png" height="350px">
+                    </div>
+                    <p>
+                        <i class="fas fa-angle-double-right"></i>  Para chamar uma stored procedure normalmente tem um comando EXECUTE ou CALL, ou DO ou RUN, dependendo do banco de dados. É um comando SQL como outro qualquer. Chamou, executa o que precisa.
+                    </p>
+                    <div class="img_acc">
+                        <img src="img/netanto.png" height="350px">
+                    </div>
+                    <div id="obs"><p >* Note que o que tem @ são os parâmetros que podem ser passados para ela. O resto são comando da linguagem, que obviamente pode executar qualquer comando SQL. Mas não só. É uma linguagem de programação como outra qualquer (ao contrário do SQL que não é uma linguagem de programação).</p></div>
+                  </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <script>
+                document.write("Copyright © " + new Date().getFullYear()) 
+            </script>
+            - GSS
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </body>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</html>
